@@ -1,0 +1,87 @@
+@import url(http://fonts.googleapis.com/css?family=Muli:300,400); /* for getting the Muli font from Google Font API */
+
+body {
+	background-color: rgb(17, 17, 17);
+}
+.standard-font-light {
+	font-family: 'Muli', sans-serif;
+	font-weight: 300;
+}
+
+.standard-font {
+	font-family: 'Muli', sans-serif;
+	font-weight: 400; 
+}
+
+.top-page {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	background: url(../img/background/main.png) 50% 20% repeat fixed;
+}
+
+.overlay:after {
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAHElEQVQIHWNgYGBIA2IQQKexCoIVoauE8amlAwAP1gctx/Z0xwAAAABJRU5ErkJggg==)
+	repeat top left;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: .3;
+}
+
+#self-img {
+	width: 200px;
+	height: 200px;
+}
+
+.img-inside-container {
+	width: 100%;
+	height: 100%;
+}
+
+.row-fiuld {
+	width: 100%;
+}
+
+.row-fiuld:before {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+
+.row-fiuld:after {
+	clear: both;
+}
+
+.center {
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+
+.intro-statement {
+	color: rgb(255, 255, 255); 
+}
+
+.intro-statement:after {
+	clear: both;
+}
+
+.warning-statement {
+	color: rgb(255, 255, 51);
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.warning-statement:after {
+	clear: both;
+}
+
+.special-sign {
+	color: rgb(255, 0 ,0);
+	text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
+}
