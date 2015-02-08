@@ -1,0 +1,11 @@
+.selfie {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
+.my-gallery {
+	background-color: rgba(32, 57, 54, 0.8);
+}
