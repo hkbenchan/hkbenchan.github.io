@@ -13,6 +13,7 @@
 		<script src="js/jquery.poptrox.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="js/Chart.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -79,26 +80,62 @@
 				</div>
 			</article>
 
+			<article class="container box style1 left">
+				<a href="https://itunes.apple.com/us/app/efficient-text-reader/id986724722?ls=1&mt=8" class="image fit"><img src="images/appIcon/EfficientTextReaderIcon.png" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2><a href="https://itunes.apple.com/us/app/efficient-text-reader/id986724722?ls=1&mt=8">Efficient Text Reader</a><br />
+							Utility
+						</h2>
+					</header>
+					<p>A hobby project.<br />Allows users to read (especially large) txt files faster.<br />
+						Available on iOS.<br /><br /><br /></p>
+				</div>
+			</article>
 
-		<!-- Portfolio -->
-			<article class="container box style2">
+
+			<article class="container box style3">
 				<header>
 					<h2>Skills</h2>
-					<p>Things that I have learnt through my life</p>
+					<p></p>
 				</header>
-				<div class="inner gallery my-gallery">
-					<div class="row 0%">
-						<div class="3u"><a href="images/skills/xcode-logo.png" class="image fit"><img src="images/thumbs/xcode-logo.jpg" alt="" title="iOS" /></a></div>
-						<div class="3u"><a href="images/skills/android-logo.jpg" class="image fit"><img src="images/thumbs/android-logo.jpg" alt="" title="Android" /></a></div>
-						<div class="3u"><a href="images/skills/aws-logo.png" class="image fit"><img src="images/thumbs/aws-logo.jpg" alt="" title="Amazon Web Service" /></a></div>
-						<div class="3u"><a href="images/skills/html5-logo.jpg" class="image fit"><img src="images/thumbs/html5-logo.jpg" alt="" title="HTML5" /></a></div>
-					</div>
-					<div class="row 0%">
-						<div class="3u"><a href="images/skills/nodejs-logo.png" class="image fit"><img src="images/thumbs/nodejs-logo.jpg" alt="" title="Node.js" /></a></div>
-						<div class="3u"><a href="images/skills/php-logo.png" class="image fit"><img src="images/thumbs/php-logo.jpg" alt="" title="PHP" /></a></div>
-						<div class="3u"><a href="images/skills/mysql-logo.png" class="image fit"><img src="images/thumbs/mysql-logo.jpg" alt="" title="MySQL" /></a></div>
-						<div class="3u"><a href="images/skills/mongodb-logo.jpg" class="image fit"><img src="images/thumbs/mongodb-logo.jpg" alt="" title="MongoDB" /></a></div>
-					</div>
+				<div class="inner gallery">
+					<!-- <div class="row 0%"> -->
+						<div class="row 0%">
+							<div class="3u 12u(mobile)" style="text-align: center;">
+								<div class="panel panel-default">
+									<div class="panel-header"><p>iOS</p></div>
+									<div class="panel-body">
+										<canvas id="skill1" height="240" width="240" style="width: 120px; height: 120px;"></canvas>
+									</div>
+								</div>
+							</div>
+							<div class="3u 12u(mobile)" style="text-align: center;">
+								<div class="panel panel-default">
+									<div class="panel-header"><p>Android</p></div>
+									<div class="panel-body">
+										<canvas id="skill2" height="240" width="240" style="width: 120px; height: 120px;"></canvas>
+									</div>
+								</div>
+							</div>
+							<div class="3u 12u(mobile)" style="text-align: center;">
+								<div class="panel panel-default">
+									<div class="panel-header"><p>Web</p></div>
+									<div class="panel-body">
+										<canvas id="skill3" height="240" width="240" style="width: 120px; height: 120px;"></canvas>
+									</div>
+								</div>
+							</div>
+							<div class="3u 12u(mobile)" style="text-align: center;">
+								<div class="panel panel-default">
+									<div class="panel-header"><p>Design</p></div>
+									<div class="panel-body">
+										<canvas id="skill4" height="240" width="240" style="width: 120px; height: 120px;"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- </div> -->
 				</div>
 			</article>
 
@@ -114,6 +151,29 @@
 				</ul>
 			</div>
 		</section>
+		<script>
+			var data1 = [
+				{ value: 90, color:"#68dff0" },
+				{ value : 10, color : "#fdfdfd" }
+			];
+			var data2 = [
+				{ value: 80, color:"#68dff0" },
+				{ value : 20, color : "#fdfdfd" }
+			];
+			var data3 = [
+				{ value: 70, color:"#68dff0" },
+				{ value : 30, color : "#fdfdfd" }
+			];
+			var data4 = [
+				{ value: 50, color:"#68dff0" },
+				{ value : 50, color : "#fdfdfd" }
+			];
 
+
+			var myChart1 = new Chart($("#skill1").get(0).getContext('2d')).Doughnut(data1);
+			var myChart2 = new Chart($("#skill2").get(0).getContext('2d')).Doughnut(data2);
+			var myChart3 = new Chart($("#skill3").get(0).getContext('2d')).Doughnut(data3);
+			var myChart4 = new Chart($("#skill4").get(0).getContext('2d')).Doughnut(data4);
+		</script>
 	</body>
 </html>
