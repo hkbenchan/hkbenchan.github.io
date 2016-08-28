@@ -1,0 +1,23 @@
+{
+  "name": "hkbenchan.github.io",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkbenchan/hkbenchan.github.io.git"
+  },
+  "author": "Ben Chan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hkbenchan/hkbenchan.github.io/issues"
+  },
+  "homepage": "https://github.com/hkbenchan/hkbenchan.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}

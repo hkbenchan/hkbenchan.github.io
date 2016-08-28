@@ -1,0 +1,18 @@
+{
+  "name": "hkbenchan.github.io",
+  "description": "My personal website",
+  "main": "index.js",
+  "authors": [
+    "Ben Chan"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ustbenchan/ustbenchan.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

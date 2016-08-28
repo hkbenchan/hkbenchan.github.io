@@ -1,0 +1,121 @@
+@import 'https://fonts.googleapis.com/css?family=Overlock:400,700';
+
+$fa-font-path: '../bower_components/font-awesome/fonts';
+
+@import '../bower_components/font-awesome/scss/font-awesome.scss';
+@import 'bootstrap-custom.scss';
+
+body {
+  font-family: 'Overlock', cursive;
+}
+
+.navbar-toggle.pull-left {
+  margin-left: 15px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+#home {
+  background: url('../img/bg.png') no-repeat center rgba(0, 0, 0, 0.7);;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  height: 160px;
+  color: white;
+
+  .introduction {
+    & h1 {
+      color: yellow;
+    }
+  }
+}
+
+.selfie {
+  padding: 20px;
+  // min-width: 10%;
+  // max-width: 25%;
+
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+  }
+}
+
+.footer-icons {
+
+  width: 100%;
+  text-align: center;
+
+  ul {
+    margin: auto;
+    padding-left: 0px;
+
+    li {
+      display: inline;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}
+
+.skill-tag {
+  @extend .label;
+  @extend .label-warning;
+}
+
+#portfolio {
+
+  .left {
+
+    @include make-xs-column(10);
+    @include make-xs-column-offset(1);
+    @include make-sm-column(8);
+    @include make-sm-column-offset(2);
+    @include make-md-column(4);
+    @include make-md-column-offset(2);
+
+    &.has-icon {
+      @include make-xs-column(10);
+      @include make-xs-column-offset(1);
+      @include make-sm-column(8);
+      @include make-sm-column-offset(1);
+      @include make-md-column(4);
+      @include make-md-column-offset(2);
+    }
+
+  }
+
+  .right {
+    @include make-xs-column(10);
+    @include make-xs-column-offset(1);
+    @include make-sm-column(8);
+    @include make-sm-column-offset(2);
+    @include make-md-column(4);
+    @include make-md-column-offset(0);
+
+    &.icon {
+      @include make-xs-column(6);
+      @include make-xs-column-offset(3);
+      @include make-sm-column(2);
+      @include make-sm-column-offset(0);
+      @include make-md-column(2);
+      @include make-md-column-offset(1);
+    }
+  }
+
+  .project {
+    margin-bottom: 16px;
+  }
+
+}
