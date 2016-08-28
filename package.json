@@ -18,6 +18,8 @@
   "homepage": "https://github.com/hkbenchan/hkbenchan.github.io#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-imagemin": "^3.0.3",
     "gulp-sass": "^2.3.2"
   }
 }
