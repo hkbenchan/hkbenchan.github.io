@@ -1,0 +1,44 @@
+{
+  "alt": {
+    "good": [
+      "has an aptitude for learning Chinese.",
+      "I am impressed by his/her focus, discipline and devotion to learning."
+    ],
+    "normal": [
+      "needs to pay more attention in class and take a more active part in class discussions to obtain a better result.",
+      "needs to participate more actively in class."
+    ],
+    "bad": [
+      "needs to exercise more self-discipline during lessons.",
+      "It is imperative that he/she improve his/her attitude to learning."
+    ]
+  },
+  "homework": {
+    "good": [
+      "produces work of a very high standard.",
+      "submits homework on time."
+    ],
+    "normal": [
+      "He/She could enrich language skills by reading more extensively.",
+      "He/She always completes his/her homework, but not to the best of his/her ability."
+    ],
+    "bad": [
+      "A more serious attitude to his/her school work would improve his/her results.",
+      "He/She rarely completes his/her homework."
+    ]
+  },
+  "result": {
+    "good": [
+      "is one of the most talented students in this group.",
+      "Core skills are solid."
+    ],
+    "normal": [
+      "has shown some improvement in this subject but needs to work harder.",
+      "He/She needs to work more diligently and consistently to achieve better results."
+    ],
+    "bad": [
+      "needs to revise thoroughly before the exam.",
+      "is advised to broaden and improve his/her language skills and knowledge by reading more."
+    ]
+  }
+}
