@@ -16,6 +16,16 @@ wordings = {
     :good => [],
     :normal => [],
     :bad => []
+  },
+  :writing => {
+    :good => [],
+    :normal => [],
+    :bad => []
+  },
+  :reading => {
+    :good => [],
+    :normal => [],
+    :bad => []
   }
 }
 
@@ -24,7 +34,7 @@ wordings = {
 # homeworkWordings = {}
 # resultWordings = {}
 
-filename = 'chi_hist.csv'
+filename = 'ch.csv'
 finalAssetBasePath = './'
 CSV.foreach(filename, quote_char: '"', col_sep: ',', row_sep: :auto, headers: true) do |row|
 
@@ -55,6 +65,26 @@ CSV.foreach(filename, quote_char: '"', col_sep: ',', row_sep: :auto, headers: tr
       wordings[:result][:normal] << row["Comment"]
     elsif row["Result"] == "1"
       wordings[:result][:bad] << row["Comment"]
+    end
+  end
+
+  unless row["Writing"].nil?
+    if row["Writing"] == "3"
+      wordings[:writing][:good] << row["Comment"]
+    elsif row["Writing"] == "2"
+      wordings[:writing][:normal] << row["Comment"]
+    elsif row["Writing"] == "1"
+      wordings[:writing][:bad] << row["Comment"]
+    end
+  end
+
+  unless row["Reading"].nil?
+    if row["Reading"] == "3"
+      wordings[:reading][:good] << row["Comment"]
+    elsif row["Reading"] == "2"
+      wordings[:reading][:normal] << row["Comment"]
+    elsif row["Reading"] == "1"
+      wordings[:reading][:bad] << row["Comment"]
     end
   end
   # tcWordings[row["internal key"]] = row["SCHSA中文"] || row["zh-hk"]
@@ -95,7 +125,7 @@ def toRealJson(wordingSet)
   return wordingSet
 end
 
-File.open(finalAssetBasePath + 'chi_hist.json', 'w') do |f|
+File.open(finalAssetBasePath + 'ch.json', 'w') do |f|
   f.write(JSON.pretty_generate(toRealJson(wordings)))
 end
 
