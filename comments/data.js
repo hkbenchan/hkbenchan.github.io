@@ -53,15 +53,15 @@ $(document).ready(function () {
     var s = sentenceArray.join(" ");
 
     if (gender == 'male') {
-      s = s.replace('/Her', '');
-      s = s.replace('/She', '');
-      s = s.replace('/she', '');
-      s = s.replace('/her', '');
+      s = s.replace(/\/Her/g, '');
+      s = s.replace(/\/She/g, '');
+      s = s.replace(/\/she/g, '');
+      s = s.replace(/\/her/g, '');
     } else {
-      s = s.replace('His/', '');
-      s = s.replace('He/', '');
-      s = s.replace('he/', '');
-      s = s.replace('his/', '');
+      s = s.replace(/His\//g, '');
+      s = s.replace(/He\//g, '');
+      s = s.replace(/he\//g, '');
+      s = s.replace(/his\//g, '');
     }
 
     var previous = $("#generated-sentence").text();
