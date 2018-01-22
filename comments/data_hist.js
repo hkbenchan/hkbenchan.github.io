@@ -6,7 +6,7 @@ $(document).ready(function () {
   $("#status").text("Loading");
 
   $.getJSON({
-    url: 'chi.json',
+    url: 'chi_hist.json',
     success: function (data, textStatus, jqXHR) {
       chi = data;
       if (checkFinalStatus()) {
@@ -53,7 +53,6 @@ $(document).ready(function () {
       s = s.replace('he/', '');
       s = s.replace('his/', '');
     }
-
     var previous = $("#generated-sentence").text();
     $("#generated-sentence").text([s, "", previous].join('\n'));
   })

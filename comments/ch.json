@@ -1,0 +1,68 @@
+{
+  "alt": {
+    "good": [
+      "XXX contributes willingly to class discussions.",
+      "XXX has worked consistently well this term.",
+      "XXX is a motivated student.",
+      "XXX is enthusiastic about this subject.",
+      "XXX is keen to learn.",
+      "XXX is quick to understand the concepts introduced in class.",
+      "He/She is a conscientious and diligent student.",
+      "He/She is a conscientious student.",
+      "He/She is able to think independently.",
+      "He/She is doing well in this subject.",
+      "He/She is willing to contribute ideas and answer questions in class.",
+      "He/She puts a lot of effort and thought into his/her daily work.",
+      "He/She puts a lot of effort into daily work.",
+      "He/She puts a lot of effort into his/her daily work.",
+      "His/Her attitude is commendable."
+    ],
+    "normal": [
+
+    ],
+    "bad": [
+      "XXX needs to develop the confidence necessary to participate in class discussions.",
+      "XXX needs to participate more in class discussions.",
+      "He/She needs to learn to organise his/her ideas carefully to write well-structured essays.",
+      "More effort is required to improve writing skills.",
+      "More effort is required.",
+      "Needs to apply himself/herself more to his/her studies.",
+      "Needs to be attentive in class.",
+      "Needs to concentrate in class.",
+      "Needs to develop a more serious attitude to his/her studies.",
+      "Progress in this subject has been hindered by inattention in class."
+    ]
+  },
+  "homework": {
+    "good": [
+      "He/She produces work of a very high standard.",
+      "His/Her written work is usually accurate and well-presented."
+    ],
+    "normal": [
+
+    ],
+    "bad": [
+
+    ]
+  },
+  "result": {
+    "good": [
+      "XXX has a good basic knowledge in this subject."
+    ],
+    "normal": [
+      "He/She could achieve better results with more effort.",
+      "He/She has made a good effort.",
+      "He/She has the ability to achieve a much better result.",
+      "He/She has the potential to achieve better results."
+    ],
+    "bad": [
+      "XXX has a weak foundation in this subject.",
+      "XXX has trouble grasping the central concepts of this subject.",
+      "He/She needs to consolidate his/her subject knowledge through rigorous revision.",
+      "He/She needs to develop and maintain a regular study routine.",
+      "He/She needs to develop his/her essay-writing skills.",
+      "He/She needs to improve his/her essay-writing skills to answer long questions on the examination effectively.",
+      "He/She needs to improve his/her writing skills."
+    ]
+  }
+}
